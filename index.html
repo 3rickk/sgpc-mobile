@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>ObraFácil</title>
+    <link rel="stylesheet" href="src/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="app">
+      <nav>
+        <img src="./assets/logo.svg" alt="Logo do Site" class="logo" />
+
+        <ul id="menulateral">
+          <li>
+            <a href="#" class="active" id="Geral">
+              <i class="fa-regular fa-chart-bar"></i>
+              Geral
+            </a>
+          </li>
+          <li>
+            <a href="#" class="active">
+              <i class="fa-regular fa-clipboard"></i>
+              Projetos
+            </a>
+          </li>
+          <li>
+            <a href="#" class="active">
+              <i class="fa-regular fa-money-bill-1"></i>
+              Controle de Custos
+            </a>
+          </li>
+          <li>
+            <a href="#" class="active">
+              <i class="fa-regular fa-address-book"></i>
+              Equipe
+            </a>
+          </li>
+          <li>
+            <a href="#" class="active">
+              <i class="fa-regular fa-id-card"></i>
+              Gestão de Equipe
+            </a>
+          </li>
+          <li>
+            <a href="#" class="active">
+              <i class="fa-solid fa-gears"></i>
+              Configurações
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <main>
+        <div class="inner">
+          <section class="title-avatar">
+            <h1>
+              Quadro de Tarefas <img src="./assets/pen.svg" alt="editar" />
+            </h1>
+            <img src="./assets/avata.PNG" alt="avatar" />
+          </section>
+
+          <section class="filter">
+            <button>
+              <i class="fa-solid fa-filter" id="filtro"></i>
+              <span>Filtrar</span>
+            </button>
+            <div class="input-wrapper">
+              <i class="fa-solid fa-magnifying-glass" id="lupa"></i>
+              <input
+                type="text"
+                placeholder="Busque por tarefas, assuntos ou responsáveis..."
+              />
+            </div>
+          </section>
+
+          <!-- KANBAN -->
+          <section class="kanban">
+            <div class="afazer">
+              <h2>A fazer</h2>
+              <div class="column">
+                <div class="card" draggable="true">
+                  <h3>Assentamento da cozinha</h3>
+                  <p>
+                    Terra seila oq coisas de construção, bater com o bagulho de
+                    ferro e tals
+                  </p>
+                  <div class="tags">
+                    <span>Erickdev</span>
+                    <span>patopatoganso</span>
+                  </div>
+                </div>
+                <div class="card" draggable="true">
+                  <h3>Assentamento da cozinha</h3>
+                  <p>
+                    Terra seila oq coisas de construção, bater com o bagulho de
+                    ferro e tals
+                  </p>
+                  <div class="tags">
+                    <span>Erickdev</span>
+                    <span>patopatoganso</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="column">
+              <h2>Em Andamento</h2>
+            </div>
+            <div class="column">
+              <h2>Concluido</h2>
+            </div>
+          </section>
+        </div>
+      </main>
+    </div>
+    <script src="src/main.js"></script>
+  </body>
+</html>
